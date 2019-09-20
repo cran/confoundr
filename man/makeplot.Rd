@@ -2,7 +2,7 @@
 % Please edit documentation in R/RFunctions_1_0_2.r
 \name{makeplot}
 \alias{makeplot}
-\title{Function to create balance plot for a specified diagnostic}
+\title{Function to create balance plot for a specified diagnostic. Takes input from balance() or apply.scope() or diagnose().}
 \usage{
 makeplot(input, diagnostic, approach, metric = "SMD", censoring, scope,
   average.over = NULL, stratum = NULL, label.exposure = "A",
@@ -16,7 +16,7 @@ makeplot(input, diagnostic, approach, metric = "SMD", censoring, scope,
   legend.title = "", legend.position = "bottom", text.legend = NULL)
 }
 \arguments{
-\item{input}{output from balance()}
+\item{input}{output from balance() or diagnose() or apply.scope()}
 
 \item{diagnostic}{diagnostic of interest e.g. 1, 2, or 3}
 
@@ -88,7 +88,7 @@ based on the format of the input dataframe, determined by \code{balance()}
 or \code{apply.scope()}.
 }
 \description{
-Function to create balance plot for a specified diagnostic
+Function to create balance plot for a specified diagnostic. Takes input from balance() or apply.scope() or diagnose().
 }
 \examples{
 # Simulate the output of balance()

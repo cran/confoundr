@@ -21,7 +21,13 @@ The tools can accommodate:
 * Data that are not time-indexed.
 * Data that are supplied in "wide" or "long" format (e.g., from the `twang` and `CBPS` packages).
 
-To install the package, use the following code:
+To install the package from [CRAN](https://CRAN.R-project.org/package=confoundr) use the following code:
+
+```
+install.packages("confoundr",dependencies=TRUE)
+```
+To install the development version, use the following code:
+
 
 ```
 install.packages("devtools",dependencies=TRUE)
@@ -37,7 +43,7 @@ To load the package, use the following code:
 library(confoundr)
 ```
 
-The package now contains the documentation and two vignettes.
+The package contains the documentation and two vignettes.
 
 For a cursory example with toy data, see:
 
